@@ -5,5 +5,15 @@
              android:layout_height="match_parent"
              tools:context="com.lx.km.activity.AdActivity">
 
+    <TextView
+        android:id="@+id/closeIcon"
+        style="@style/TextStyle.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/small.Super"
+        android:text="3秒后可关闭"/>
+
 
 </FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small.Super">3dp</dimen>
+    <dimen name="small">5dp</dimen>
+    <dimen name="normal">10dp</dimen>
+    <dimen name="large">15dp</dimen>
+    <dimen name="large.Super">20dp</dimen>
+</resources>
