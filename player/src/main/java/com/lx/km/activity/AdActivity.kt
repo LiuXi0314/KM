@@ -14,6 +14,7 @@ class AdActivity : BaseActivity() {
         closeIcon.setOnClickListener { v ->
             {
 
+
             }
         }
     }
