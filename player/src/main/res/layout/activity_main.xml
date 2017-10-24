@@ -1,57 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.lx.km.activity.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
 
-
-    <LinearLayout
-        android:id="@+id/controlLay"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:paddingLeft="80dp"
-        android:paddingRight="80dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/large.Super"
-            android:layout_weight="1"
-            android:src="@drawable/ic_skip_previous_black_36dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/large.Super"
-            android:layout_weight="1"
-            android:src="@drawable/ic_pause_black_36dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/large.Super"
-            android:layout_weight="1"
-            android:src="@drawable/ic_skip_next_black_36dp"/>
-
-    </LinearLayout>
+        android:layout_height="@dimen/titleBarHeight"/>
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/controlLay"/>
-
-    <ImageView
-        android:id="@+id/back"
-        android:src="@drawable/ic_fast_forward_black_36dp"
-        android:layout_width="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_height="wrap_content"/>
-
-</RelativeLayout>
+</LinearLayout>
