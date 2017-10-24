@@ -1,7 +1,6 @@
 package com.lx.km.activity
 
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
@@ -10,7 +9,9 @@ import com.lx.km.base.BaseActivity
 import com.lx.km.utils.LogUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
-
+/**
+ * 首页
+ */
 class MainActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
 
@@ -23,23 +24,9 @@ class MainActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
     private fun initToolbar() {
         toolbar.setTitle("KM PLAYER")
-        toolbar.setLogo(ContextCompat.getDrawable(this, R.drawable.ic_album_black_36dp))
+//        toolbar.setLogo(ContextCompat.getDrawable(this, R.drawable.ic_album_black_36dp))
         setSupportActionBar(toolbar)
-        toolbar.setOnMenuItemClickListener(object : Toolbar.OnMenuItemClickListener {
-
-            override fun onMenuItemClick(item: MenuItem): Boolean {
-
-                if (item.getItemId() === R.id.setting) {
-                    setting()
-                } else if (item.getItemId() === R.id.search) {
-                    LogUtils.d("Search")
-                }
-                return true
-            }
-        })
-
         toolbar.setOnMenuItemClickListener(this)
-
 
     }
 
@@ -64,5 +51,8 @@ class MainActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
     private fun search() {
         LogUtils.d("Search")
     }
+
+
+
 }
 

@@ -11,5 +11,48 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/titleBarHeight"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/controlLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large.Super"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_previous_black_36dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large.Super"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pause_black_36dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large.Super"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_next_black_36dp"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/emptyText"
+            style="@style/TextStyle.Common"
+            android:layout_centerInParent="true"
+            android:text="当前歌曲列表为空～"/>
+    </RelativeLayout>
 
 </LinearLayout>
