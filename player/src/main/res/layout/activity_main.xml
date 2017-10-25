@@ -16,33 +16,61 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/controlLay"
+            android:id="@+id/minPlayLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingLeft="80dp"
-            android:paddingRight="80dp">
+            >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:id="@+id/musicImage"
+                android:layout_width="@dimen/titleBarHeight"
+                android:layout_height="@dimen/titleBarHeight"
+                android:padding="@dimen/small"
+                android:src="@drawable/ic_album_black_36dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/large.Super"
                 android:layout_weight="1"
-                android:src="@drawable/ic_skip_previous_black_36dp"/>
+                android:orientation="vertical"
+                android:padding="@dimen/small">
+
+                <TextView
+                    android:id="@+id/songName"
+                    style="@style/TextStyle.Common"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="演员"
+                    />
+
+                <TextView
+                    android:id="@+id/singer"
+                    style="@style/TextStyle.Small.Super"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small"
+                    android:layout_weight="1"
+                    android:text="薛之谦"
+                    />
+            </LinearLayout>
+
 
             <ImageView
+                android:id="@+id/playButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/large.Super"
-                android:layout_weight="1"
+                android:padding="@dimen/small"
                 android:src="@drawable/ic_pause_black_36dp"/>
 
             <ImageView
+                android:id="@+id/nextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/large.Super"
-                android:layout_weight="1"
+                android:padding="@dimen/small"
                 android:src="@drawable/ic_skip_next_black_36dp"/>
 
         </LinearLayout>
@@ -53,6 +81,7 @@
             style="@style/TextStyle.Common"
             android:layout_centerInParent="true"
             android:text="当前歌曲列表为空～"/>
+
     </RelativeLayout>
 
 </LinearLayout>
