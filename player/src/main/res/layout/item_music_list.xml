@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
               android:orientation="horizontal">
 
     <TextView
         android:id="@+id/itemNo"
-
+        style="@style/TextStyle.Common"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal"
+        android:text="1"/>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -41,8 +44,10 @@
 
     <ImageView
         android:id="@+id/itemEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="@dimen/large.Super"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/large"
+        android:src="@drawable/ic_keyboard_control_black_36dp"/>
 
 
 </LinearLayout>
